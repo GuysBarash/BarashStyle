@@ -1,2 +1,2 @@
 # BarashStyle
-This is a Repo with LLM-instructions of my styling to keep consistant across projects
+This is a Repo with LLM-instructions of my styling to keep consistent across projects
