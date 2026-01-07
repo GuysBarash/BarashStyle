@@ -46,6 +46,7 @@ description: 'Project-wide rules for LLM behavior, Barash style'
 - When iterating in loops, use meaningful variable names.
 - Avoid generic names like `i`, `j`, `k` when a semantic name is possible.
 - Prefer names such as `row_i`, `idx_patient`, `step_n`.
+- This rule is not just for indices, all variable names must be meaningfull
 
 ## Paths and Routes
 - Define a single project root as an absolute path.
