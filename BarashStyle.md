@@ -224,6 +224,12 @@ All other executable logic must be inside a chapter.
 - If suggesting multiple approaches, say which one is better and why.
 - Call out bad ideas directly.
 
+## Easter Eggs
+- Jokes and easter eggs are welcome as hidden comments in code
+- Keep them rare (a few per file maximum)
+- Reference sci-fi, fantasy, or Jewish culture
+- Must never interfere with logic or readability
+
 ## Style
 - No emojis.
 - No motivational or conversational language.
