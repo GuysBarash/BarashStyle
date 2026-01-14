@@ -54,12 +54,12 @@ if section_compute:
 - Data analysis and exploratory research
 - Scientific computing workflows
 - Algorithm development and testing
-- One-off computational experiments
+- Team codebases with multiple contributors
+
 
 **Not good for:**
 - Production APIs or web services
 - Reusable libraries
-- Team codebases with multiple contributors
 - Long-term maintained software
 
 ## Key Principles
@@ -186,7 +186,6 @@ Key rules:
 - Cache expensive operations
 - Minimal documentation (code is the documentation)
 - Avoid try/except unless I/O or external systems
-- Single letters OK for loops, abbreviations OK for domain terms
 
 ## Examples
 
