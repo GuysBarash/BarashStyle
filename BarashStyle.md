@@ -175,6 +175,35 @@ All other executable logic must be inside a chapter.
 ```
 - Set the expensive chapter to `False` after first run, rely on cached file
 
+## Algorithm Selection and Comparison
+- When experimenting with different algorithms or approaches, use a selection pattern
+- Define the configuration variable inside the chapter where it's used
+- All algorithm variants should produce the same outputs for downstream compatibility
+- Pattern:
+```python
+  section_compute = True
+  if section_compute:
+      ALGORITHM = 'random_forest'  # Options: 'linear', 'random_forest', 'neural_net'
+      
+      if ALGORITHM == 'linear':
+          model = LinearRegression()
+          results = model.fit(X_train, y_train)
+          # outputs: model, results
+      
+      if ALGORITHM == 'random_forest':
+          model = RandomForestRegressor(n_estimators=100)
+          results = model.fit(X_train, y_train)
+          # outputs: model, results
+      
+      if ALGORITHM == 'neural_net':
+          model = build_neural_net(input_dim=X_train.shape[1])
+          results = model.fit(X_train, y_train, epochs=50)
+          # outputs: model, results
+```
+- This allows easy comparison of approaches by changing one variable
+- Downstream chapters work unchanged regardless of algorithm choice
+- The selection variable lives inside the chapter, not floating outside
+
 ## Parameters
 - Always include a `section_parameters` chapter after setup
 - Define all experimental parameters in one place:
